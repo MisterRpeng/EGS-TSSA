@@ -70,7 +70,7 @@ We thank the authors for sharing sincerely.
 If you find this work is useful in your research, please cite our paper:
 ```
 @InProceedings{CVPR24_EGS_TSSA,
-    author    = {Ming, Di and Peng, Ren and Wang, Yunlong and Fang, Xin},
+    author    = {Ming, Di and Peng, Ren and Wang, Yunlong and Feng, Xin},
     title     = {Transferable Structural Sparse Adversarial Attack Via Exact Group Sparsity Training},
     booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
     month     = {June},
