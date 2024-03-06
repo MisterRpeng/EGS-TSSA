@@ -38,13 +38,13 @@ if __name__ == '__main__':
     back_grad = torch.tensor([]).to(device)
 
 
-    # 获取梯度的函数
+    # Getting the gradient
     def backward_hook(module, grad_in, grad_out):
         global back_grad
         back_grad = grad_out[0].clone().detach()
 
 
-    # 获取特征层的函数
+    # Get feature layer
     def forward_hook(module, input, output):
         global back_fea
         back_fea = output.detach()
@@ -144,7 +144,7 @@ if __name__ == '__main__':
     test_size = len(test_set)
     print('test data size:', test_size)
 
-
+    # Get the most important area
     def grad_topk(grad, index, filterSize, Tk=tk):
         k = int(((img_size / filterSize) ** 2) * Tk)
         box_size = filterSize * filterSize
@@ -159,7 +159,7 @@ if __name__ == '__main__':
             grad[i] = grad[i].put_(index[i], tmp_bi)
         return grad
 
-
+    # Get the zone area of interest
     def grad_choose(grad, index, filterSize, choose):
         box_size = filterSize * filterSize
         for i in range(len(grad)):
@@ -201,7 +201,8 @@ if __name__ == '__main__':
             out_bb = model_t(normalize(trans_incep(img.clone().detach())))
         else:
             out_bb = model_t(normalize(img.clone().detach()))
-
+            
+        # Getting a structured mask
         grad = back_grad.mean(dim=-1, keepdim=True).mean(dim=-2, keepdim=True)
         grad_fea = (grad * back_fea).sum(dim=1)
         resize = transforms.Resize((img_size, img_size), antialias=True)

@@ -32,9 +32,11 @@ parser.add_argument('--lr', type=float, default=2.25e-5, help='Initial learning 
 parser.add_argument('--checkpoint', type=str, default='', help='path to checkpoint')
 parser.add_argument('--tk', type=float, default=0.6, help='path to checkpoint')
 
+# stage I
 lam_1 = 0.00
 lam_2 = 0.00001
 
+## stage II
 # lam_1 = 0.0001
 # lam_2 = 0.0003
 
@@ -56,13 +58,13 @@ back_fea = torch.tensor([]).to(device)
 back_grad = torch.tensor([]).to(device)
 
 
-# 获取梯度的函数
+# Getting the gradient
 def backward_hook(module, grad_in, grad_out):
     global back_grad
     back_grad = grad_out[0].clone().detach()
 
 
-# 获取特征层的函数
+# Get feature layer
 def forward_hook(module, input, output):
     global back_fea
     back_fea = output.detach()
@@ -152,7 +154,7 @@ train_loader = torch.utils.data.DataLoader(train_set, batch_size=args.batch_size
 train_size = len(train_set)
 print('Training data size:', train_size)
 
-# Loss
+# Adv Loss
 def CWLoss(logits, target, kappa=-0., tar=False):
     target = torch.ones(logits.size(0)).to(device).type(torch.cuda.FloatTensor).mul(target.float())
     target_one_hot = Variable(torch.eye(1000).type(torch.cuda.FloatTensor)[target.long()].to(device))
@@ -169,7 +171,7 @@ def CWLoss(logits, target, kappa=-0., tar=False):
 
 criterion = CWLoss
 
-
+# Get the most important area
 def grad_topk(grad, index, filterSize, Tk):
     k = int(((img_size / filterSize) ** 2) * Tk)
     box_size = filterSize * filterSize
@@ -184,6 +186,7 @@ def grad_topk(grad, index, filterSize, Tk):
         grad[i] = grad[i].put_(index[i], tmp_bi)
     return grad
 
+# Get the zone area of interest
 def grad_choose(grad, index, filterSize, choose):
     box_size = filterSize * filterSize
     for i in range(len(grad)):
@@ -248,6 +251,7 @@ for epoch in range(epochs):
         netG.train()
         optimG.zero_grad()
 
+        # Getting a structured mask
         grad = back_grad.mean(dim=-1, keepdim=True).mean(dim=-2, keepdim=True)
         grad_fea = (grad * back_fea).sum(dim=1)
         resize = transforms.Resize((img_size, img_size), antialias=True)

@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5b09b9ac-cbac-4ea2-a047-c6d471c0cf70" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="5b09b9ac-cbac-4ea2-a047-c6d471c0cf70" name="Default Changelist" comment="Merge branch 'main' of https://github.com/MisterRpeng/EGS-TSSA into main&#10;&#10;# Conflicts:&#10;#&#9;README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weights/weights_download_path.txt" beforeDir="false" afterPath="$PROJECT_DIR$/weights/weights_download_path.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +95,8 @@
       <workItem from="1701070646301" duration="422000" />
       <workItem from="1702901043455" duration="2470000" />
       <workItem from="1709724466835" duration="2080000" />
+      <workItem from="1709727620758" duration="394000" />
+      <workItem from="1709729356477" duration="2046000" />
     </task>
     <servers />
   </component>
