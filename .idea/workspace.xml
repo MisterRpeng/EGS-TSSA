@@ -104,46 +104,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="634" y="212" key="FileChooserDialogImpl" timestamp="1701070788711">
+    <state x="292" y="0" key="CommitChangelistDialog2" timestamp="1709727792799">
       <screen x="0" y="0" width="1707" height="912" />
     </state>
-    <state x="634" y="212" key="FileChooserDialogImpl/0.0.1707.912@0.0.1707.912" timestamp="1701070788711" />
-    <state width="1663" height="240" key="GridCell.Tab.0.bottom" timestamp="1701069012379">
-      <screen x="0" y="0" width="1707" height="912" />
-    </state>
-    <state width="1663" height="240" key="GridCell.Tab.0.bottom/0.0.1707.912@0.0.1707.912" timestamp="1701069012379" />
-    <state width="1663" height="240" key="GridCell.Tab.0.center" timestamp="1701069012379">
-      <screen x="0" y="0" width="1707" height="912" />
-    </state>
-    <state width="1663" height="240" key="GridCell.Tab.0.center/0.0.1707.912@0.0.1707.912" timestamp="1701069012379" />
-    <state width="1663" height="240" key="GridCell.Tab.0.left" timestamp="1701069012379">
-      <screen x="0" y="0" width="1707" height="912" />
-    </state>
-    <state width="1663" height="240" key="GridCell.Tab.0.left/0.0.1707.912@0.0.1707.912" timestamp="1701069012379" />
-    <state width="1663" height="240" key="GridCell.Tab.0.right" timestamp="1701069012379">
-      <screen x="0" y="0" width="1707" height="912" />
-    </state>
-    <state width="1663" height="240" key="GridCell.Tab.0.right/0.0.1707.912@0.0.1707.912" timestamp="1701069012379" />
-    <state width="1663" height="297" key="GridCell.Tab.1.bottom" timestamp="1701069012376">
-      <screen x="0" y="0" width="1707" height="912" />
-    </state>
-    <state width="1663" height="297" key="GridCell.Tab.1.bottom/0.0.1707.912@0.0.1707.912" timestamp="1701069012376" />
-    <state width="1663" height="297" key="GridCell.Tab.1.center" timestamp="1701069012376">
-      <screen x="0" y="0" width="1707" height="912" />
-    </state>
-    <state width="1663" height="297" key="GridCell.Tab.1.center/0.0.1707.912@0.0.1707.912" timestamp="1701069012376" />
-    <state width="1663" height="297" key="GridCell.Tab.1.left" timestamp="1701069012376">
-      <screen x="0" y="0" width="1707" height="912" />
-    </state>
-    <state width="1663" height="297" key="GridCell.Tab.1.left/0.0.1707.912@0.0.1707.912" timestamp="1701069012376" />
-    <state width="1663" height="297" key="GridCell.Tab.1.right" timestamp="1701069012376">
-      <screen x="0" y="0" width="1707" height="912" />
-    </state>
-    <state width="1663" height="297" key="GridCell.Tab.1.right/0.0.1707.912@0.0.1707.912" timestamp="1701069012376" />
-    <state x="355" y="99" key="SettingsEditor" timestamp="1701063905547">
-      <screen x="0" y="0" width="1707" height="912" />
-    </state>
-    <state x="355" y="99" key="SettingsEditor/0.0.1707.912@0.0.1707.912" timestamp="1701063905547" />
+    <state x="292" y="0" key="CommitChangelistDialog2/0.0.1707.912@0.0.1707.912" timestamp="1709727792799" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/code$test.coverage" NAME="test Coverage Results" MODIFIED="1701067478866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

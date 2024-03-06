@@ -58,6 +58,7 @@ This will start trainig a generator trained on one dataset (--train_dir) against
 ```
 This will load a generator trained against ResNet50 (--model_type) and evaluate clean and adversarial accuracy of VGG16 (--model_t) under perturbation budget 10 (--eps) and a top-k setting $tk=0.6$ in a targeted setting (--target). <p>
 The top-k values of the test are affected by the sparsity level. Please modify the top-k according to the value of tk in the training pre-weighting remarks.<p>
+
 For example, if the weights are `hard_eps10_res50_k0.82.pth`, you should set `tk=0.82`.
 
 ## Acknowledgements
