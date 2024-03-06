@@ -1,7 +1,7 @@
 # EGS-TSSA
 [[Paper]()] [[Supp]()] [[Poster]()] [[Presentation]()]
 
-Code for the method [**\[CVPR 2024\] "Transferable Structural Sparse Adversarial Attack Via Exact Group Sparsity Training", Di Ming, Peng Ren, Yunlong Wang, Xin Feng \***](). 
+Code for the method [**\[CVPR 2024\] "Transferable Structural Sparse Adversarial Attack Via Exact Group Sparsity Training", Di Ming, Peng Ren, Yunlong Wang, Xin Feng\***](). 
 
 
 ## Dependencies
@@ -69,7 +69,7 @@ We thank the authors for sharing sincerely.
 ## Citation
 If you find this work is useful in your research, please cite our paper:
 ```
-@InProceedings{Di_2024_CVPR,
+@InProceedings{CVPR24_EGS_TSSA,
     author    = {Ming, Di and Peng, Ren and Wang, Yunlong and Fang, Xin},
     title     = {Transferable Structural Sparse Adversarial Attack Via Exact Group Sparsity Training},
     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
@@ -80,6 +80,6 @@ If you find this work is useful in your research, please cite our paper:
 ```
 ## Contact
 
-Peng Ren: [MisterR_2019@163.com](mailto:MisterR_2019@163.com)
+[Peng Ren](https://github.com/MisterRpeng/): [MisterR_2019@163.com](mailto:MisterR_2019@163.com)
 
 [Di Ming](https://midasdming.github.io/): [diming@cqut.edu.cn](mailto:diming@cqut.edu.cn)
