@@ -39,7 +39,7 @@ These models are trained on ImageNet and available in Pytorch.
   
 * Evaluations data:
   * randomly selected 5k images from [ImageNet](http://www.image-net.org/) Validation Set.
-  * The test data is the same as that of the TSAA method, you can download evaluations data from [here](https://drive.google.com/drive/folders/1z6fMGd-NFvKi1-tVG59ow7ZxHyEGfEGI?usp=sharing), shared by TSAA authors.
+  * The test data is the same as that used in the TSAA method, and you can download the evaluation data from [here](https://drive.google.com/drive/folders/1z6fMGd-NFvKi1-tVG59ow7ZxHyEGfEGI?usp=sharing) shared by TSAA authors.
   
   
 ### Training
