@@ -1,6 +1,8 @@
 # EGS-TSSA
+[[Paper]()] [[Supp]()] [[Poster]()] [[Presentation]()]
 
-Code for the method [Transferable Structural Sparse Adversarial Attack Via Exact Group Sparsity Training]
+Code for the method [**\[CVPR 2024\] "Transferable Structural Sparse Adversarial Attack Via Exact Group Sparsity Training", Di Ming, Peng Ren, Yunlong Wang, Xin Feng \***](). 
+
 
 ## Dependencies
 1. Install [pytorch](https://pytorch.org/). This repo is tested with pytorch=2.0.0, python=3.10.10.
@@ -17,17 +19,21 @@ Adversarial generators are trained against following two models.
 * Inception-V3
 * ResNet50
 ```
+weights/soft_eps10_incv3_k1.pth
+weights/soft_eps10_res50_k0.95.pth
 weights/hard_eps10_incv3_tk0.95.pth
 weights/hard_eps10_res50_tk0.82.pth
 weights/soft_eps255_incv3_tk1.pth
 weights/soft_eps255_res50_tk0.873.pth
+weights/hard_eps255_incv3_k0.9.pth
+weights/hard_eps255_res50_k0.671.pth
 weights/target971_eps255_incv3_tk1.pth
 weights/target971_eps255_res50_tk0.7.pth
 ```
 
 These models are trained on ImageNet and available in Pytorch. 
   
-## Datasets
+### Datasets
 * Training data:
   * [ImageNet](http://www.image-net.org/) Training Set.
   
@@ -36,7 +42,7 @@ These models are trained on ImageNet and available in Pytorch.
   * The test data is the same as that of the TSAA method, you can download evaluations data from [here](https://drive.google.com/drive/folders/1z6fMGd-NFvKi1-tVG59ow7ZxHyEGfEGI?usp=sharing), shared by TSAA authors.
   
   
-## Training
+### Training
 <p align="justify"> Run the following command
 
 ```
@@ -44,7 +50,7 @@ These models are trained on ImageNet and available in Pytorch.
 ```
 This will start trainig a generator trained on one dataset (--train_dir) against ResNet50 (--model_type) under perturbation budget $\ell_\infty$=255 (--eps) and a top-k setting $tk=0.6$ in a non-targeted setting (--target).<p>
 
-## Evaluations
+### Evaluations
 <p align="justify"> Run the following command
 
 ```
@@ -53,3 +59,26 @@ This will start trainig a generator trained on one dataset (--train_dir) against
 This will load a generator trained against ResNet50 (--model_type) and evaluate clean and adversarial accuracy of VGG16 (--model_t) under perturbation budget 10 (--eps) and a top-k setting $tk=0.6$ in a targeted setting (--target). <p>
 The top-k values of the test are affected by the sparsity level. Please modify the top-k according to the value of tk in the training pre-weighting remarks.<p>
 For example, if the weights are `hard_eps10_res50_k0.82.pth`, you should set `tk=0.82`.
+
+## Acknowledgements
+The code refers to  [TSAA](https://github.com/shaguopohuaizhe/TSAA), [StrAttack](https://github.com/KaidiXu/StrAttack).
+
+We thank the authors for sharing sincerely.
+
+## Citation
+If you find this work is useful in your research, please cite our paper:
+```
+@InProceedings{Di_2024_CVPR,
+    author    = {Ming, Di and Peng, Ren and Wang, Yunlong and Fang, Xin},
+    title     = {Transferable Structural Sparse Adversarial Attack Via Exact Group Sparsity Training},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {}
+}
+```
+## Contact
+
+Peng Ren: [MisterR_2019@163.com](mailto:MisterR_2019@163.com)
+
+[Di Ming](https://midasdming.github.io/): [diming@cqut.edu.cn](mailto:diming@cqut.edu.cn)
