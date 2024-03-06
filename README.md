@@ -56,10 +56,10 @@ This will start training a generator on the given dataset (--train_dir) against 
 ```
   python test.py --test_dir [path_to_val] --model_type res50 --model_t vgg16 --eps 10 --target -1 --checkpoint [path_to_checkpoint] --tk 0.6
 ```
-This will load a generator trained against ResNet50 (--model_type) and evaluate clean and adversarial accuracy of VGG16 (--model_t) under perturbation budget 10 (--eps) and a top-k setting $tk=0.6$ in a targeted setting (--target). <p>
-The top-k values of the test are affected by the sparsity level. Please modify the top-k according to the value of tk in the training pre-weighting remarks.<p>
+This will load a generator trained against ResNet50 (--model_type), and evaluate the attack success rate (ASR) on the target model VGG16 (--model_t), under the constraint of the perturbation budget 10 (--eps) and the top-k selection $tk=0.6$, in the non-targeted attack setting (--target). <p>
+The top-k values of the test are affected by the sparsity level. Please modify the top-k (--tk) according to the value of tk mentioned in the pretrained weight file.<p>
 
-For example, if the weights are `hard_eps10_res50_tk0.82.pth`, you should set `tk=0.82`.
+For example, if the weight file is `hard_eps10_res50_tk0.82.pth`, you should set `tk=0.82`.
 
 ## Acknowledgements
 The code refers to  [TSAA](https://github.com/shaguopohuaizhe/TSAA), [StrAttack](https://github.com/KaidiXu/StrAttack).
