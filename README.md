@@ -48,7 +48,7 @@ These models are trained on ImageNet and available in Pytorch.
 ```
   python train.py --train_dir [path_to_train] --model_type res50 --eps 10 --target -1 --tk 0.6
 ```
-This will start trainig a generator trained on one dataset (--train_dir) against ResNet50 (--model_type) under perturbation budget $\ell_\infty$=255 (--eps) and a top-k setting $tk=0.6$ in a non-targeted setting (--target).<p>
+This will start training a generator on the given dataset (--train_dir) against ResNet50 (--model_type), under the constraint of the perturbation budget $\ell_\infty$=255 (--eps) and the top-k selection $tk=0.6$ in the non-targeted attack setting (--target).<p>
 
 ### Evaluations
 <p align="justify"> Run the following command
