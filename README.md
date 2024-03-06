@@ -13,7 +13,7 @@ pip install -r requirements.txt
 
 
 ## Pretrained-Generators
-Pretrained adversarial generators can be downloaded from the provided [link](https://drive.google.com/drive/folders/1iypmK4iIdR2drG6EEe0f2K66fJRC9i7N?usp=sharing), and should be placed under the `/EGS_TSSA/weights/` directory folder to generate sparse adversarial perturbation on test sample.
+Pretrained adversarial generators can be downloaded from the provided [link](https://drive.google.com/drive/folders/1iypmK4iIdR2drG6EEe0f2K66fJRC9i7N?usp=sharing), and should be placed under the `/EGS_TSSA/weights/` directory folder to generate structural sparse adversarial perturbation on test sample.
 
 Adversarial generators are trained against the following two models.
 * Inception-V3
