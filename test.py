@@ -201,7 +201,7 @@ if __name__ == '__main__':
             out_bb = model_t(normalize(trans_incep(img.clone().detach())))
         else:
             out_bb = model_t(normalize(img.clone().detach()))
-            
+
         # Getting a structured mask
         grad = back_grad.mean(dim=-1, keepdim=True).mean(dim=-2, keepdim=True)
         grad_fea = (grad * back_fea).sum(dim=1)
