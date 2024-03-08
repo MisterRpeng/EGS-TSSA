@@ -13,7 +13,7 @@ pip install -r requirements.txt
 
 
 ## Pretrained-Generators
-Pretrained adversarial generators can be downloaded from the provided [link](https://drive.google.com/drive/folders/1iypmK4iIdR2drG6EEe0f2K66fJRC9i7N?usp=sharing), and should be placed under the `/EGS_TSSA/weights/` directory folder to generate structural sparse adversarial perturbation on test sample.
+Pretrained adversarial generators can be downloaded from the provided [link](https://drive.google.com/drive/folders/1iypmK4iIdR2drG6EEe0f2K66fJRC9i7N?usp=sharing), and can be placed under the `/EGS_TSSA/weights/` directory folder to generate structural sparse adversarial perturbation on test sample.
 
 Adversarial generators are trained against the following two models.
 * Inception-V3
@@ -38,8 +38,8 @@ These models are trained on ImageNet and available in Pytorch.
   * [ImageNet](http://www.image-net.org/) Training Set.
   
 * Evaluations data:
-  * randomly selected 5k images from [ImageNet](http://www.image-net.org/) Validation Set.
-  * The test data is the same as that used in the TSAA method, and you can download the evaluation data from [here](https://drive.google.com/drive/folders/1z6fMGd-NFvKi1-tVG59ow7ZxHyEGfEGI?usp=sharing) shared by TSAA authors.
+  * Randomly select 5k images from the [ImageNet](http://www.image-net.org/) Validation Set.
+  * The test data is the same as that used in the TSAA method, and you can download the evaluation data from [here](https://drive.google.com/drive/folders/1z6fMGd-NFvKi1-tVG59ow7ZxHyEGfEGI?usp=sharing) provided by TSAA authors.
   
   
 ### Training
