@@ -1,7 +1,7 @@
 # EGS-TSSA
 [[Paper]()] [[Supp]()] [[Poster]()] [[Presentation]()]
 
-Code for the method [**\[CVPR 2024\] "Transferable Structural Sparse Adversarial Attack Via Exact Group Sparsity Training", Di Ming, Peng Ren, Yunlong Wang, Xin Feng\***](). 
+The official implementation of [**\[CVPR 2024 Paper\] "Transferable Structural Sparse Adversarial Attack Via Exact Group Sparsity Training", Di Ming, Peng Ren, Yunlong Wang, Xin Feng\***](). 
 
 ## Introduction
 Highly transferable adversarial attacks pose a significant threat to deep neural networks (DNNs). Many studies have shown that DNNs are also vulnerable to sparsity attacks.  
