@@ -3,6 +3,11 @@
 
 Code for the method [**\[CVPR 2024\] "Transferable Structural Sparse Adversarial Attack Via Exact Group Sparsity Training", Di Ming, Peng Ren, Yunlong Wang, Xin Feng\***](). 
 
+![example](show_image/Comparison_of_adversarial_perturbations.jpg?raw=true)
+Comparison of perturbation pattern across different adversarial attack methods. Our EGS-TSSA method produces perturbations
+that are noticeably more concentrated and structured as compared to other methods.
+
+
 
 ## Dependencies
 1. Install [pytorch](https://pytorch.org/). This repo is tested with pytorch=2.0.0, python=3.10.10.
