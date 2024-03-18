@@ -3,12 +3,23 @@
 
 Code for the method [**\[CVPR 2024\] "Transferable Structural Sparse Adversarial Attack Via Exact Group Sparsity Training", Di Ming, Peng Ren, Yunlong Wang, Xin Feng\***](). 
 
+## Introduction
+Highly transferable adversarial attacks pose a significant threat to deep neural networks (DNNs). Many studies have shown that DNNs are also vulnerable to sparsity attacks.  
+Current sparse attack methods mostly limit only the magnitude and number of perturbations, while generally overlooking the location of the perturbations. 
+A subset of studies, however, indicates that perturbations existing in the significant regions with rich classification-relevant features are more effective. 
+This suggests that incorporating appropriate positional information can lead to the generation of perturbations in a more efficient direction. 
+Leveraging this insight, we introduce structural sparsity constraints in the perturbation generation process to limit the perturbation positions. 
+To ensure that the perturbations are generated towards the classification of important regions, we propose an exact group sparsity training method to implement structural sparsity constraints according to group feature importance. 
+To improve the effectiveness of sparse training, we introduce a masked quantization network and multi-stage optimization strategy in the training process. 
+With CNNs employed as surrogate models, extensive experiments showed that our method had higher transferability and perturbation imperceptibility in the approximate sparsity setting as compared to state-of-the-art methods.
+In cross-model ViT, object detection, and semantic segmentation attack tasks, we also achieved a higher attack success rate.
+## Demo
 ![example](show_image/Comparison_of_adversarial_perturbations.jpg?raw=true)
 Comparison of perturbation pattern across different adversarial attack methods. Our EGS-TSSA method produces perturbations
 that are noticeably more concentrated and structured as compared to other methods.
 
 
-
+# Getting Started
 ## Dependencies
 1. Install [pytorch](https://pytorch.org/). This repo is tested with pytorch=2.0.0, python=3.10.10.
 2. Install python packages using following command:
