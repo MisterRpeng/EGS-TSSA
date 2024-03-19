@@ -11,7 +11,7 @@ Highly transferable adversarial attacks pose a significant threat to deep neural
 
 The overall framework of our proposed transferable structural sparse attack method (Top: generative network $G$; Bottom: masked quantization network $Q$)
 
-## Demo
+## Adversarial Examples and Adversarial Perturbation
 <div align="center"><img src=https://github.com/MisterRpeng/EGS-TSSA/blob/main/show_image/Comparison_of_adversarial_perturbations.jpg width=80% /></div>
 
 Comparison of perturbation pattern across different adversarial attack methods. Our EGS-TSSA method produces perturbations
