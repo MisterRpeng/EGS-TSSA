@@ -8,8 +8,8 @@ Highly transferable adversarial attacks pose a significant threat to deep neural
 
 <table>
   <tr>
-    <td> <div align="center"><img src=https://github.com/MisterRpeng/EGS-TSSA/blob/main/show_image/Flowchart.jpg width=50% /></div> </td>
-    <td> <div align="center"><img src=https://github.com/MisterRpeng/EGS-TSSA/blob/main/show_image/Comparison_of_adversarial_perturbations.jpg width=80% /></div> </td>
+    <td> <div align="center"><img src=https://github.com/MisterRpeng/EGS-TSSA/blob/main/show_image/Flowchart.jpg width=30% /></div> </td>
+    <td> <div align="center"><img src=https://github.com/MisterRpeng/EGS-TSSA/blob/main/show_image/Comparison_of_adversarial_perturbations.jpg width=50% /></div> </td>
   </tr>
   <tr>
     <td> The overall framework of our proposed transferable structural sparse attack method (Top: generative network $G$; Bottom: masked quantization network $Q$)  </td>
