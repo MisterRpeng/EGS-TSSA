@@ -6,16 +6,7 @@ The official implementation of [**\[CVPR 2024\] "Transferable Structural Sparse 
 ## Introduction
 Deep neural networks (DNNs) are vulnerable to highly transferable adversarial attacks. Especially, many studies have shown that sparse attacks pose a significant threat to DNNs on account of their exceptional imperceptibility. Current sparse attack methods mostly limit only the magnitude and number of perturbations while generally overlooking the location of the perturbations, resulting in decreased performances on attack transferability. A subset of studies indicates that perturbations existing in the significant regions with rich classification-relevant features are more effective. Leveraging this insight, we introduce the structural sparsity constraint in the framework of generative models to limit the perturbation positions. To ensure that the perturbations are generated towards classification-relevant regions, we propose an exact group sparsity training method to learn pixel-level and group-level sparsity. For purpose of improving the effectiveness of sparse training, we further put forward masked quantization network and multi-stage optimization algorithm in the training process. Utilizing CNNs as surrogate models, extensive experiments demonstrate that our method has higher transferability in image classification attack compared to state-of-the-art methods at approximately same sparsity levels. In cross-model ViT, object detection, and semantic segmentation attack tasks, we also achieve a better attack success rate. 
 
-## Methodology
-<div align="center"><img src=https://github.com/MisterRpeng/EGS-TSSA/blob/main/show_image/Flowchart.jpg width=65% /></div>
-
-The overall framework of our proposed transferable structural sparse attack method (Top: generative network $G$; Bottom: masked quantization network $Q$) 
-
-## Demo (Adversarial Examples & Perturbations)
-<div align="center"><img src=https://github.com/MisterRpeng/EGS-TSSA/blob/main/show_image/Comparison_of_adversarial_perturbations.jpg width=80% /></div>
-
-Comparison of perturbation pattern across different adversarial attack methods. Our EGS-TSSA method produces perturbations
-that are noticeably more concentrated and structured as compared to other methods.
+![Home](https://github.com/MisterRpeng/EGS-TSSA/blob/main/show_image/Home.png)
 
 
 # Getting Started
