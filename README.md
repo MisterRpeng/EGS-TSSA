@@ -1,5 +1,5 @@
 # EGS-TSSA
-[[Paper]()] [[Supp]()] [[Poster]()] [[Presentation]()]
+[[Paper](https://cvpr.thecvf.com/Conferences/2024/AcceptedPapers)] [[Supp](https://cvpr.thecvf.com/Conferences/2024/AcceptedPapers)] [[Poster](https://drive.google.com/file/d/1QqOaq-PXrNTeZvV9oVvoANz2NsqMTOst/view?usp=sharing)] [[Presentation](https://drive.google.com/file/d/1tE_1PUYNf5KXrjoD3VPbCmNM7cJI-2Uq/view?usp=drive_link)]
 
 The official implementation of [**\[CVPR 2024\] "Transferable Structural Sparse Adversarial Attack Via Exact Group Sparsity Training", Di Ming, Peng Ren, Yunlong Wang, Xin Feng\***](https://cvpr.thecvf.com/Conferences/2024/AcceptedPapers). 
 
